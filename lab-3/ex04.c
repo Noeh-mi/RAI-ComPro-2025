@@ -4,10 +4,7 @@ int main() {
     int CalScore, PhyScore, SciScore;
     char name[20];
     float average;
-    int index;
-
-    // array of letters
-    char grades[] = {'A', 'B', 'C', 'D', 'F'};
+    char grade;
 
     printf("Enter your name: ");
     scanf("%s", name);
@@ -18,22 +15,21 @@ int main() {
     printf("Enter your Science Score: ");
     scanf("%d", &SciScore);
 
-    average = (CalScore + PhyScore + SciScore) / 3;
+    average = (CalScore + PhyScore + SciScore) / 3.00; // so it can print out in float properly
 
     if(average >= 80){
-        index = 0;
+        grade = 'A';
     }
     else if(average >= 70 && average < 80){
-        index = 1;
+        grade = 'B';
     }
     else if(average >= 60 && average < 70){
-        index = 2;
+        grade = 'C';
     }
     else if(average >= 50 && average < 60){
-        index = 3;
+        grade = 'D';
     } else {
-        index = 4;
+        grade = 'F';
     }
-
-    printf("%s, your average is %.2f. You got grade %c.\n", name, average, grades[index]);
+    printf("%s, your average is %.2f. You got grade %c.\n", name, average, grade);
 }

@@ -14,7 +14,4 @@ int main() {
     } else {
         printf("%d is odd\n", num);
     }
-    // or } else if(num % 2 == 1){ 
-    // printf("&d is odd\n", num)
-    // } also works
 }

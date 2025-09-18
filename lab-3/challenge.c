@@ -101,8 +101,7 @@ int main() {
     printf("%-12s%-10d%-10c%-10.1f\n", "Physics", PhyScore, PhyGrade, PhyP);
     printf("%-12s%-10d%-10c%-10.1f\n", "Calculus", ComProScore, ComProGrade, ComProP);
 
-    printf("GPA: \n%.1f\n", GPA);
+    printf("\nGPA: %.1f\n", GPA);
 
     return 0;
-
 }
